@@ -3,3 +3,7 @@ lessapp/lessapp/__pycache__/settings.cpython-312.pyc
 lessapp/lessapp/__pycache__/urls.cpython-312.pyc
 lessapp/lessapp/__pycache__/wsgi.cpython-312.pyc
 lessapp/db.sqlite3
+lessapp/task2/__pycache__/__init__.cpython-312.pyc
+lessapp/task2/__pycache__/views.cpython-312.pyc
+lessapp/app/__pycache__/__init__.cpython-312.pyc
+lessapp/app/__pycache__/views.cpython-312.pyc
