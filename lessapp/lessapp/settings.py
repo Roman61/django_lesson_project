@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'lessapp'
-
 ]
 
 MIDDLEWARE = [
@@ -56,7 +55,7 @@ ROOT_URLCONF = 'lessapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates', 'templates\\third_task', 'templates\second_task'],
+        'DIRS': [BASE_DIR / 'templates', 'templates\\third_task', 'templates\\second_task'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
