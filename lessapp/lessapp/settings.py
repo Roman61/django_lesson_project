@@ -55,7 +55,7 @@ ROOT_URLCONF = 'lessapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates', 'templates\\third_task', 'templates\\second_task'],
+        'DIRS': [BASE_DIR / 'templates', 'templates\\third_task', 'templates\\second_task', 'templates\\fourth_task'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
