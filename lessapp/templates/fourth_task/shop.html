@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "menu.html" %}
+{% block title %} Home - {{ block.super }}{% endblock %}
+{% block pagename %}
     <h1>Игры</h1>
+{% endblock %}
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+<p>Context: {{ context }}</p>
+{% block content %}
     <ul>
-        <li>
-            Atomic Heart
-            <button>Купить</button>
-        </li>
-        <li>
-            Cyberpunk 2077
-            <button>Купить</button>
-        </li>
-        <li>
-            PayDay 2
-            <button>Купить</button>
-        </li>
+    {% for value in context %}
+        <li>{{ value }}</li>
+    {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}

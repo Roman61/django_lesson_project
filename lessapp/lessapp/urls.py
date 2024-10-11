@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from task3.views import MainPage, ShopPage, CartPage
+from task4.views import MainPage, shop_page, CartPage, MenuWidget
 
 # from app.views import func_template, ClassTemplate
 
@@ -25,5 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cart/', CartPage.as_view()),
     path('main/', MainPage.as_view()),
-    path('shop/', ShopPage.as_view())
+    path('shop/', shop_page),
+    path('menu/', MenuWidget.as_view())
 ]
