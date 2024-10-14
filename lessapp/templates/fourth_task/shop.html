@@ -6,11 +6,13 @@
 {% block menu %}
 {{ block.super }}
 {% endblock %}
-<p>Context: {{ context }}</p>
+<p>Games: {{ games }}</p>
 {% block content %}
     <ul>
-    {% for value in context %}
-        <li>{{ value }}</li>
+    {% for game in games %}
+        <li>{{ game }}<button>Купить</button></li>
     {% endfor %}
     </ul>
 {% endblock %}
+
+
