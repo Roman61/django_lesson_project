@@ -17,14 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from task4.views import MainPage, shop_page, CartPage, MenuWidget
+#from task5.views import MainPage, shop_page, CartPage, MenuWidget
+from task5.views import sign_up_by_django, sign_up_by_html
 
 # from app.views import func_template, ClassTemplate
 
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('cart/', CartPage.as_view()),
+#     path('main/', MainPage.as_view()),
+#     path('shop/', shop_page),
+#     path('menu/', MenuWidget.as_view())
+# ]
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('cart/', CartPage.as_view()),
-    path('main/', MainPage.as_view()),
-    path('shop/', shop_page),
-    path('menu/', MenuWidget.as_view())
+    path('', sign_up_by_django, name='sign_up_by_django'),
+    path('django_sign_up/', sign_up_by_html, name='sign_up_by_html'),
 ]
